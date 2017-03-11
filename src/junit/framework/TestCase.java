@@ -129,7 +129,9 @@ public abstract class TestCase extends Assert implements Test {
 	 */
 	public void runBare() throws Throwable {
 		Throwable exception= null;
-		if(("testAACEncoders".equals(fName))||("testAMRNBEncoders".equals(fName))||("testMultipleIoReceive_USAGE_IO_INPUT".equals(fName)))
+		if(("testAACEncoders".equals(fName))||("testAMRNBEncoders".equals(fName))||("testMultipleIoReceive_USAGE_IO_INPUT".equals(fName))
+		||("testEncodeDecodeVideoFromPersistentSurfaceToSurfaceQCIF".equals(fName))||("testEncodeDecodeVideoFromPersistentSurfaceToSurfaceQVGA".equals(fName))
+		||("testVP8EncodeDecodeVideoFromPersistentSurfaceToSurfaceQCIF".equals(fName)))
 		{
                 	setUp();
 			try {
