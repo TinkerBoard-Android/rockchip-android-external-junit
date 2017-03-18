@@ -131,7 +131,9 @@ public abstract class TestCase extends Assert implements Test {
 		Throwable exception= null;
 		if(("testAACEncoders".equals(fName))||("testAMRNBEncoders".equals(fName))||("testMultipleIoReceive_USAGE_IO_INPUT".equals(fName))
 		||("testEncodeDecodeVideoFromPersistentSurfaceToSurfaceQCIF".equals(fName))||("testEncodeDecodeVideoFromPersistentSurfaceToSurfaceQVGA".equals(fName))
-		||("testVP8EncodeDecodeVideoFromPersistentSurfaceToSurfaceQCIF".equals(fName))||("testSynchronizedRecord".equals(fName)))
+		||("testVP8EncodeDecodeVideoFromPersistentSurfaceToSurfaceQCIF".equals(fName))||("testSynchronizedRecord".equals(fName))
+		||("testEncodeDecodeVideoFromPersistentSurfaceToSurface720p".equals(fName))||("testH264SurfaceViewLargerHeightVideoDecode".equals(fName))
+		||("testVP8EncodeDecodeVideoFromPersistentSurfaceToSurfaceQVGA".equals(fName))||("testH264SurfaceViewLargerWidthVideoDecode".equals(fName)))
 		{
                 	setUp();
 			try {
